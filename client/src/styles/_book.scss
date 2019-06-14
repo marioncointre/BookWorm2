@@ -1,0 +1,140 @@
+@media (min-width: 1024px) {
+  .book {
+    margin-bottom: 40%;
+    margin-top: 1%;
+    &__introduction {
+      background-size: cover;
+      height: 320px;
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-image: url(../assets/images/book_background.jpg);
+      width: 100vw;
+    }
+    &__information {
+      padding-left: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 2%;
+
+      button,
+      #read {
+        display: block;
+        width: 250px;
+        height: 50px;
+        background-color: $BookWorm;
+        color: white;
+        font-weight: bold;
+        border-radius: 4px;
+      }
+    }
+    &__title {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 10%;
+      h1 {
+        color: white;
+        padding-top: 5%;
+      }
+      h2 {
+        padding-bottom: 5%;
+      }
+    }
+    img {
+      width: 250px;
+    }
+    &__details {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      margin-top: 2%;
+      justify-content: center;
+      padding-left: 10%;
+      margin-bottom: 10%;
+    }
+    &__published,
+    &__description,
+    &__categories,
+    &__isbn {
+      span {
+        color: grey;
+      }
+    }
+  }
+  //-------  Recommendations page ------
+  .recommended {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+    line-height: 5vh;
+    margin: auto;
+    margin-top: 3%;
+
+    &__slider {
+      background-image: url("../assets/images/book_background.jpg");
+      width: 100vw;
+      height: 200px;
+      position: relative;
+    }
+
+    &__title {
+      margin-top: 2%;
+      margin-bottom: 4%;
+      top: 10%;
+      left: 35%;
+      position: absolute;
+
+      h1 {
+        text-align: center;
+      }
+
+      h2 {
+        text-align: center;
+        padding-left: 0;
+      }
+    }
+    h2 {
+      padding: 3%;
+    }
+
+    h3 {
+      text-align: center;
+      padding-left: 0;
+      line-height: 60px;
+    }
+
+    &__booklist {
+      margin-bottom: 6%;
+      margin-top: 2%;
+    }
+  }
+  .numberCircle {
+    border-radius: 50%;
+    width: 40px;
+    padding: 4px;
+    background: $BookWorm;
+    border: 2px solid $BookWorm;
+    text-align: center;
+  }
+  #rank {
+    color: white;
+    line-height: 44px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  .rating {
+    width: 200px;
+    overflow: hidden;
+    padding-bottom: 5%;
+    text-align: center;
+  }
+  .rating a {
+    color: $BookWorm;
+    text-decoration: none;
+  }
+}

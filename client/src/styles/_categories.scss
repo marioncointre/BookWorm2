@@ -1,0 +1,464 @@
+@media (min-width: 320px) and (max-width: 767px) {
+  .slider {
+    height: 0px;
+
+    &__title {
+      color: $BookWorm;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    h1 {
+      padding: 4%;
+      text-transform: uppercase;
+    }
+  }
+  .categories {
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    h3 {
+      margin-top: 30%;
+      margin-bottom: 10%;
+      font-weight: bold;
+      font-size: 30px;
+      color: $BookWorm;
+    }
+
+    h4 {
+      font-size: 18px;
+      color: $BookWorm;
+      text-decoration: underline;
+    }
+  }
+
+  .subcategory {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    flex-wrap: wrap;
+    margin-bottom: 4%;
+    margin-top: 2%;
+    align-items: center;
+    margin: auto;
+
+    &__scroll {
+      display: none;
+    }
+
+    &__page {
+      overflow: visible;
+      flex-wrap: wrap;
+    }
+
+    .subcategory--wrap {
+      display: flex;
+      flex-direction: row;
+      margin-left: 6%;
+      flex-wrap: wrap;
+    }
+
+    .subcategory__book {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      margin: auto;
+      padding: 10px;
+
+      img {
+        height: 180px;
+        width: 130px;
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+      }
+
+      p {
+        color: black;
+        font-size: 20px;
+        line-height: 35px;
+        text-align: center;
+      }
+
+      .title,
+      .author,
+      .published {
+        text-overflow: ellipsis;
+        display: block;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      .title {
+        font-weight: bold;
+      }
+      .author {
+        color: grey;
+      }
+    }
+    &--noscroll {
+      overflow: visible;
+    }
+  }
+  // -------- Search page -------
+
+  .search__slider {
+    position: absolute;
+    color: white;
+    top: 20%;
+    left: 35%;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 10px;
+  }
+  #search__title {
+    display: flex;
+    text-align: center;
+    color: $BookWorm;
+    padding: 5%;
+  }
+
+  .categories__page > section > a > h3 {
+    padding: 10px;
+    margin-bottom: 10%;
+    font-weight: bold;
+    font-size: 30px;
+    color: $BookWorm;
+  }
+
+  .search__notfound {
+    margin-left: 6%;
+    font-size: 24px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .slider {
+    height: 0px;
+
+    &__title {
+      color: $BookWorm;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    h1 {
+      padding: 4%;
+      text-transform: uppercase;
+    }
+  }
+  .categories {
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    h3 {
+      margin-top: 30%;
+      margin-bottom: 10%;
+      font-weight: bold;
+      font-size: 30px;
+      color: $BookWorm;
+    }
+
+    h4 {
+      font-size: 18px;
+      color: $BookWorm;
+      text-decoration: underline;
+    }
+  }
+
+  .subcategory {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 4%;
+    margin-top: 2%;
+    align-items: center;
+
+    &__scroll {
+      display: none;
+    }
+
+    &__page {
+      overflow: visible;
+      flex-wrap: wrap;
+    }
+
+    .subcategory--wrap {
+      display: flex;
+      flex-direction: row;
+      margin-left: 6%;
+      flex-wrap: wrap;
+    }
+
+    .subcategory__book {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      margin: auto;
+      padding: 10px;
+
+      img {
+        height: 180px;
+        width: 130px;
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+      }
+
+      p {
+        color: black;
+        font-size: 20px;
+        line-height: 35px;
+        text-align: center;
+      }
+
+      .title,
+      .author,
+      .published {
+        text-overflow: ellipsis;
+        display: block;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      .title {
+        font-weight: bold;
+      }
+      .author {
+        color: grey;
+      }
+    }
+    &--noscroll {
+      overflow: visible;
+    }
+  }
+  // -------- Search page -------
+
+  .search__slider {
+    position: absolute;
+    color: white;
+    top: 20%;
+    left: 35%;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 10px;
+  }
+  #search__title {
+    display: flex;
+    text-align: center;
+    color: $BookWorm;
+    padding: 5%;
+  }
+
+  .categories__page > section > a > h3 {
+    padding: 10px;
+    margin-bottom: 10%;
+    font-weight: bold;
+    font-size: 30px;
+    color: $BookWorm;
+  }
+
+  .search__notfound {
+    margin-left: 6%;
+    font-size: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .slider {
+    background-size: cover;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url("http://www.laptiteaqc.com/wp-content/uploads/2017/03/Livre_Printemps.jpg");
+    display: block;
+    position: relative;
+
+    &__title {
+      position: absolute;
+      color: white;
+      top: 20%;
+      left: 35%;
+      padding: 0 20px;
+      display: inline-block;
+      font-size: 3em;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 10px;
+    }
+  }
+
+  .section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    h1 {
+      padding: 4%;
+      text-transform: uppercase;
+    }
+  }
+  .categories {
+    width: 90%;
+    overflow: hidden;
+    position: relative;
+    margin-left: 4%;
+    margin-top: 4%;
+    margin-bottom: 5%;
+
+    a {
+      text-decoration: none;
+    }
+
+    h3 {
+      padding: 10px;
+      margin-bottom: 10%;
+      font-weight: bold;
+      font-size: 30px;
+      color: $BookWorm;
+    }
+
+    h4 {
+      font-size: 18px;
+      color: $BookWorm;
+      text-decoration: underline;
+    }
+  }
+
+  .subcategory {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    flex-wrap: nowrap;
+    margin-bottom: 4%;
+    margin-top: 2%;
+    // justify-content: space-evenly;
+
+    &__scroll {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .mousey {
+        width: 35px;
+        padding: 10px 15px;
+        height: 3px;
+        border: 2px solid $BookWorm;
+        border-radius: 25px;
+        opacity: 0.75;
+        box-sizing: content-box;
+        text-align: center;
+      }
+
+      .scroller {
+        width: 10px;
+        height: 3px;
+        border-radius: 25%;
+        background-color: $BookWorm;
+      }
+    }
+
+    &__page {
+      overflow: visible;
+      flex-wrap: wrap;
+    }
+
+    .subcategory--wrap {
+      display: flex;
+      flex-direction: row;
+      margin-left: 6%;
+      flex-wrap: wrap;
+    }
+
+    .subcategory__book {
+      display: flex;
+      flex-direction: column;
+      width: 12%;
+      align-items: center;
+      padding: 10px;
+
+      img {
+        height: 180px;
+        width: 130px;
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+      }
+
+      p {
+        color: black;
+        font-size: 20px;
+        line-height: 35px;
+        text-align: center;
+      }
+
+      .title,
+      .author,
+      .published {
+        text-overflow: ellipsis;
+        display: block;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      .title {
+        font-weight: bold;
+      }
+      .author {
+        color: grey;
+      }
+    }
+    &--noscroll {
+      overflow: visible;
+    }
+  }
+  // -------- Search page -------
+
+  .search__slider {
+    position: absolute;
+    color: white;
+    top: 20%;
+    left: 35%;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 10px;
+  }
+  #search__title {
+    display: flex;
+    text-align: center;
+    color: $BookWorm;
+    padding: 2%;
+  }
+
+  .categories__page > section > a > h3 {
+    padding: 10px;
+    margin-bottom: 10%;
+    font-weight: bold;
+    font-size: 30px;
+    color: $BookWorm;
+  }
+
+  .search__notfound {
+    margin-left: 6%;
+    font-size: 24px;
+  }
+}

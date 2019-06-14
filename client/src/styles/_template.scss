@@ -1,0 +1,45 @@
+.slider {
+  background-size: cover;
+  position: relative;
+  height: 320px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-image: url(../assets/images/Roman.png);
+}
+
+.categories {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 336px;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+  h3 {
+    padding: 10px;
+    margin-bottom: 3%;
+  }
+}
+
+.subcategory {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10%;
+
+  .subcategory__book {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    align-items: center;
+    padding: 10px;
+    img {
+      height: 100px;
+    }
+
+    p {
+      color: black;
+      font-size: 20px;
+    }
+  }
+}

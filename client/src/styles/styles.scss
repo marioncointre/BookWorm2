@@ -1,0 +1,184 @@
+$Black: #323232;
+$BookWorm: #ff5869;
+
+// Fonts
+
+html,
+body,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .wrapper {
+    width: 100vw;
+
+    .page-full {
+      width: 100%;
+      padding: 20px 0 15px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: white;
+      font-size: 35px;
+      font-weight: bolder;
+      text-transform: capitalize;
+      padding-top: 2%;
+    }
+
+    #login-page {
+      background: url(../assets/images/books.jpg) center top no-repeat;
+      background-size: cover;
+      text-align: center;
+    }
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 80%;
+    padding: 10px;
+    align-items: center;
+
+    &__enter {
+      margin: auto;
+      margin-top: 6%;
+    }
+    &__title {
+      color: white;
+      width: 80%;
+      margin: auto;
+      font-size: 20px !important;
+      font-weight: 600;
+      line-height: 200%;
+      span {
+        color: $BookWorm;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .wrapper {
+    width: 100vw;
+
+    .page-full {
+      width: 100%;
+      padding: 20px 0 15px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: white;
+      font-size: 35px;
+      font-weight: bolder;
+      text-transform: lowercase;
+      padding-top: 2%;
+    }
+
+    #login-page {
+      background: url(../assets/images/books.jpg) center top no-repeat;
+      background-size: cover;
+      text-align: center;
+    }
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 80%;
+    padding: 10px;
+    align-items: center;
+
+    &__enter {
+      margin: auto;
+      margin-top: 6%;
+    }
+    &__title {
+      color: white;
+      width: 80%;
+      margin: auto;
+      font-size: 20px !important;
+      font-weight: 600;
+      line-height: 200%;
+      span {
+        color: $BookWorm;
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .wrapper {
+    width: 100%;
+    text-align: left;
+    margin: 0 auto;
+
+    .page-full {
+      width: 100%;
+      padding: 60px 0 75px 0;
+      height: 80vh;
+    }
+
+    h1 {
+      color: white;
+      font-size: 50px;
+      font-weight: bolder;
+      text-transform: capitalize;
+      padding-top: 2%;
+    }
+
+    #login-page {
+      background: url(../assets/images/books.jpg) center top no-repeat;
+      background-size: cover;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .home {
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 70%;
+    padding: 20px;
+
+    &__enter {
+      margin: auto;
+      margin-top: 6%;
+    }
+    &__title {
+      color: white;
+      width: 80%;
+      margin: auto;
+      font-size: 24px !important;
+      font-weight: 600;
+      line-height: 200%;
+      span {
+        color: $BookWorm;
+      }
+    }
+  }
+}
+
+@import "header";
+@import "login";
+@import "footer";
+@import "categories";
+@import "book";
+@import "staticpages";
+@import "fonts";
+@import "circular";
+@import "mylibrary";

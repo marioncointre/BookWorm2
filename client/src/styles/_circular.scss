@@ -1,0 +1,111 @@
+@media (min-width: 320px) and (max-width: 767px) {
+  .CircularProgressbar {
+    width: 20%;
+    vertical-align: middle;
+  }
+
+  .CircularProgressbar .CircularProgressbar-path {
+    stroke: $BookWorm;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.5s ease 0s;
+  }
+
+  .CircularProgressbar .CircularProgressbar-trail {
+    stroke: #eec2c2;
+
+    stroke-linecap: round;
+  }
+
+  .CircularProgressbar .CircularProgressbar-text {
+    fill: $BookWorm;
+    font-size: 18px;
+    // dominant-baseline: middle;
+    text-anchor: middle;
+  }
+
+  .CircularProgressbar .CircularProgressbar-background {
+    fill: #d6d6d6;
+  }
+
+  /*
+ * Sample background styles. Use these with e.g.:
+ *
+ *   <CircularProgressbar
+ *     className="CircularProgressbar-inverted"
+ *     background
+ *     percentage={50}
+ *   />
+ */
+  .CircularProgressbar.CircularProgressbar-inverted
+    .CircularProgressbar-background {
+    fill: $BookWorm;
+  }
+
+  .CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-text {
+    fill: #fff;
+  }
+
+  .CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-path {
+    stroke: #fff;
+  }
+
+  .CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-trail {
+    stroke: transparent;
+  }
+}
+
+@media (min-width: 1024px) {
+  .CircularProgressbar {
+    width: 55%;
+    vertical-align: middle;
+  }
+
+  .CircularProgressbar .CircularProgressbar-path {
+    stroke: $BookWorm;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.5s ease 0s;
+  }
+
+  .CircularProgressbar .CircularProgressbar-trail {
+    stroke: #eec2c2;
+
+    stroke-linecap: round;
+  }
+
+  .CircularProgressbar .CircularProgressbar-text {
+    fill: $BookWorm;
+    font-size: 20px;
+    dominant-baseline: middle;
+    text-anchor: middle;
+  }
+
+  .CircularProgressbar .CircularProgressbar-background {
+    fill: #d6d6d6;
+  }
+
+  /*
+ * Sample background styles. Use these with e.g.:
+ *
+ *   <CircularProgressbar
+ *     className="CircularProgressbar-inverted"
+ *     background
+ *     percentage={50}
+ *   />
+ */
+  .CircularProgressbar.CircularProgressbar-inverted
+    .CircularProgressbar-background {
+    fill: $BookWorm;
+  }
+
+  .CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-text {
+    fill: #fff;
+  }
+
+  .CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-path {
+    stroke: #fff;
+  }
+
+  .CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-trail {
+    stroke: transparent;
+  }
+}
