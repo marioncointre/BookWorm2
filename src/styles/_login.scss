@@ -82,7 +82,167 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+  .wrapper {
+    max-width: 100vw;
+
+    #form-login,
+    #form-password {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 5px;
+      background-color: rgba(90, 83, 67, 0.7);
+      box-shadow: -5.29px 7.281px 20px 0px rgba(0, 1, 0, 0.25);
+      max-width: 470px;
+      padding: 20px 5%;
+      margin: 10vw auto 0 auto;
+      color: #ffffff;
+    }
+
+    #form-login > form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #login-page #form-login p {
+      text-align: center;
+      margin-top: 2%;
+    }
+
+    #login-page #form-login h3 {
+      font-size: 20px;
+      line-height: 150%;
+      span {
+        text-decoration: underline;
+      }
+    }
+
+    #login-page a {
+      color: #ffffff;
+    }
+
+    #login-page h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    #login-page label,
+    #login-page p,
+    #login-page input {
+      font-size: 16px;
+      text-align: left;
+    }
+
+    .full-input {
+      width: 100%;
+      height: 35px;
+      line-height: 32px;
+      padding: 0 10px;
+      border: 0;
+      border-radius: 2px;
+      background-color: rgb(255, 255, 255);
+      margin-top: 21px;
+      display: inline-block;
+      outline: none;
+      color: $BookWorm;
+
+      &::placeholder {
+        color: $BookWorm;
+      }
+    }
+    input[type="password"] {
+      font: small-caption;
+      font-size: 16px;
+    }
+
+    .margininput {
+      margin-right: 1%;
+    }
+  }
 }
+
+@media (min-width: 1024px) {
+  .wrapper {
+    max-width: 100vw;
+
+    #form-login,
+    #form-password {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 5px;
+      background-color: rgba(90, 83, 67, 0.7);
+      box-shadow: -5.29px 7.281px 20px 0px rgba(0, 1, 0, 0.25);
+      max-width: 470px;
+      padding: 20px 5%;
+      margin: 10vw auto 0 auto;
+      color: #ffffff;
+    }
+
+    #form-login > form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #login-page #form-login p {
+      text-align: center;
+      margin-top: 2%;
+    }
+
+    #login-page #form-login h3 {
+      font-size: 20px;
+      line-height: 150%;
+      span {
+        text-decoration: underline;
+      }
+    }
+
+    #login-page a {
+      color: #ffffff;
+    }
+
+    #login-page h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    #login-page label,
+    #login-page p,
+    #login-page input {
+      font-size: 16px;
+      text-align: left;
+    }
+
+    .full-input {
+      width: 100%;
+      height: 35px;
+      line-height: 32px;
+      padding: 0 10px;
+      border: 0;
+      border-radius: 2px;
+      background-color: rgb(255, 255, 255);
+      margin-top: 21px;
+      display: inline-block;
+      outline: none;
+      color: $BookWorm;
+
+      &::placeholder {
+        color: $BookWorm;
+      }
+    }
+    input[type="password"] {
+      font: small-caption;
+      font-size: 16px;
+    }
+
+    .margininput {
+      margin-right: 1%;
+    }
+  }
+}
+
 .wrapper {
   max-width: 100vw;
 

@@ -39,6 +39,12 @@
       color: $BookWorm;
       text-decoration: underline;
     }
+    &__page {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: auto;
+    }
   }
 
   .subcategory {
@@ -63,17 +69,17 @@
     .subcategory--wrap {
       display: flex;
       flex-direction: row;
-      margin-left: 6%;
+      margin-left: 0%;
       flex-wrap: wrap;
     }
 
     .subcategory__book {
       display: flex;
       flex-direction: column;
-      width: 100%;
+      // width: 100%;
       align-items: center;
       margin: auto;
-      padding: 10px;
+      padding: 8px;
 
       img {
         height: 180px;
