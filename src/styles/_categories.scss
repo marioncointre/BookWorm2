@@ -1,6 +1,6 @@
 @media (min-width: 320px) and (max-width: 767px) {
   .slider {
-    height: 0px;
+    // height: 0px;
 
     &__title {
       color: $BookWorm;
@@ -42,8 +42,8 @@
     &__page {
       display: flex;
       flex-direction: column;
-      width: 100%;
-      margin: auto;
+      max-width: 95vw;
+      align-items: center;
     }
   }
 
@@ -55,7 +55,7 @@
     margin-bottom: 4%;
     margin-top: 2%;
     align-items: center;
-    margin: auto;
+    max-width: 100%;
 
     &__scroll {
       display: none;
@@ -68,17 +68,17 @@
 
     .subcategory--wrap {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       margin-left: 0%;
       flex-wrap: wrap;
+      max-width: 100%;
     }
 
     .subcategory__book {
       display: flex;
       flex-direction: column;
-      // width: 100%;
+      max-width: 100%;
       align-items: center;
-      margin: auto;
       padding: 8px;
 
       img {
@@ -100,8 +100,6 @@
         text-overflow: ellipsis;
         display: block;
         width: 100%;
-        white-space: nowrap;
-        overflow: hidden;
       }
 
       .title {
@@ -358,6 +356,7 @@
     margin-bottom: 4%;
     margin-top: 2%;
     // justify-content: space-evenly;
+    justify-content: center;
 
     &__scroll {
       display: flex;

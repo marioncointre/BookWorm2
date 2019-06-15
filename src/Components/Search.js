@@ -38,12 +38,12 @@ class Search extends React.Component {
     const searchTerm = this.props.match.params.keyword;
     const volumesList = this.state.volumesData.map((volumeData, index) => {
       const { volumeInfo, imageLinks, industryIdentifiers } = volumeData;
-
+      const searchPath = "/categories/" + industryIdentifiers[0].identifier;
       return (
         <>
           <div className="subcategory__book">
             <p>
-              <Link to={industryIdentifiers[0].identifier}>
+              <Link to={searchPath}>
                 <img src={imageLinks.thumbnail} alt={volumeInfo.title} />
               </Link>
             </p>
